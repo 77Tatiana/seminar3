@@ -16,4 +16,4 @@ double bz = Convert.ToDouble(Console.ReadLine());
 
 double distans = Math.Sqrt(Math.Pow((ax-bx), 2) + Math.Pow((ay-by), 2) + Math.Pow((az-bz), 2));
 
-Console.WriteLine($"Расстояние между А и В = {Math.Round(distans, 3)}");
+Console.WriteLine($"Расстояние между А и В = {Math.Round(distans, 2)}");
