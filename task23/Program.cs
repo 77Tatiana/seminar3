@@ -3,10 +3,10 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-Console.Write("Введите число:");
+Console.Write("Введите число: ");
 double N = Convert.ToInt32(Console.ReadLine());
 int count = 1;
-Console.Write($"{N} =");
+Console.Write($"{N} ->");
 while(count <= N)
 {
     Console.Write($" {Math.Pow(count, 3)} ");
