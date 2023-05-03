@@ -5,17 +5,20 @@
 
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int temp = 0, result = 0;
-if(num < 100000 && num > 10000){
-result = num % 100;
-while(num > 100){
+int temp = 0, count = 0;
+if(num > 10000 && num < 100000)
+{   
+    count = num % 100;
+    while(num > 100)
+{
     num/=10;
 }
-temp = num/10;
-num %= 10;
-temp = num * 10 + temp;
-if(temp == result){
+  temp = num/10;
+  num %= 10;
+  temp = num * 10 + temp;
+  if(temp == count)
+{
     Console.WriteLine("да");
 }
-else Console.WriteLine("нет");
+  else Console.WriteLine("нет");
 }
