@@ -6,18 +6,14 @@
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int temp = 0, result = 0;
-
-if(num < 100000 && num > 10000){
 result = num % 100;
-while(num > 100){
-    num/=10;
+while (num > 100)
+{
+    temp = num % 10;
+    result = result * 10 + temp;
+    num = num / 10;
 }
-temp = num/10;
-num %= 10;
-temp = num * 10 + temp;
 if(temp == result){
     Console.WriteLine("да");
 }
 else Console.WriteLine("нет");
-}
-else Console.WriteLine("Введите пятизначное число!");
